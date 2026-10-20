@@ -1,0 +1,22 @@
+# namespace chave valor — aplicado com: adb shell settings put
+# Animações off (UI instantânea)
+global window_animation_scale 0
+global transition_animation_scale 0
+global animator_duration_scale 0
+# Nunca dormir / sem screensaver
+global stay_on_while_plugged_in 7
+system screen_off_timeout 2147483647
+secure screensaver_enabled 0
+secure screensaver_activate_on_sleep 0
+secure screensaver_activate_on_dock 0
+# Rede: sem scans em segundo plano, sem avisos
+global wifi_sleep_policy 2
+global wifi_scan_always_enabled 0
+global ble_scan_always_enabled 0
+global network_recommendations_enabled 0
+global wifi_networks_available_notification_on 0
+# HDMI-CEC: mantém, mas não desliga a box sozinha
+global hdmi_control_auto_device_off_enabled 0
+# Instalação via adb mais rápida
+global package_verifier_enable 0
+global verifier_verify_adb_installs 0

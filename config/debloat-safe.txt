@@ -1,0 +1,14 @@
+# Apps removidos p/ usuário 0 (reversível: ./mecool.sh restore)
+com.netflix.ninja
+com.google.android.youtube.tv
+com.google.android.youtube.tvmusic
+com.google.android.videos
+com.google.android.music
+com.amazon.amazonvideo.livingroom
+com.disney.disneyplus
+com.google.android.play.games
+com.google.android.apps.tv.launcherx.demo
+com.android.dtv
+com.droidlogic.appinstall
+com.droidlogic.SubTitleService
+com.mecool.upgrade.ota

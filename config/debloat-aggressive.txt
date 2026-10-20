@@ -1,0 +1,9 @@
+# Só com --aggressive. Remove recomendações, Assistant e Cast.
+# Perde: botão de voz do controle, Chromecast built-in, "Recomendados" na home.
+com.google.android.leanbacklauncher.recommendations
+com.google.android.tvrecommendations
+com.google.android.katniss
+com.google.android.apps.mediashell
+com.google.android.tv.bugreportsender
+com.google.android.feedback
+com.google.android.partnersetup
