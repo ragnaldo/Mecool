@@ -40,10 +40,13 @@ install)
 
   echo "== Instalando APKs de apks/"
   for f in apks/*.apk; do [ -e "$f" ] || continue; echo "  $f"; adb install -r -g "$f" </dev/null; done
-  if ! sh pm list packages $STEAMLINK | grep -q "$STEAMLINK"; then
-    echo "!! Steam Link não instalado. Ponha o APK em apks/ ou instale pela Play Store (abrindo agora)."
-    sh am start -a android.intent.action.VIEW -d "market://details?id=$STEAMLINK" >/dev/null
-  fi
+  for pkg in $STEAMLINK com.nathnetwork.xciptv; do
+    if ! sh pm list packages "$pkg" | grep -q "package:$pkg"; then
+      echo "!! $pkg não instalado. Ponha o APK em apks/ ou instale pela Play Store (abrindo agora)."
+      sh am start -a android.intent.action.VIEW -d "market://details?id=$pkg" >/dev/null
+      read -r -p "   Instale na TV e tecle Enter... " _ </dev/tty
+    fi
+  done
 
   echo "== Settings"
   while read -r ns key val; do
